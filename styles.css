@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f6e4bb; /* Koyu krem rengi */
+    color: #333;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2a2a72;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #4b4b96;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    color: #333;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #2a2a72;
+    color: white;
+    transition: left 0.3s;
+    z-index: 999;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+}
+
+.content {
+    margin-left: 20px;
+    padding: 20px;
+    width: 100%;
+    transition: margin-left 0.3s;
+}
+
+.content section {
+    margin-bottom: 40px;
+}
+
+.about-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #2a2a72;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card, .project-card, .blog-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover, .project-card:hover, .blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2, .project-card h2, .blog-card h2 {
+    margin-top: 0;
+}
+
+.card a, .project-card a, .blog-card a {
+    color: #007BFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.card a:hover, .project-card a:hover, .blog-card a:hover {
+    text-decoration: underline;
+}
+
+.project-card img, .blog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #4b4b96;
+}
+
+p {
+    color: #555;
+}
