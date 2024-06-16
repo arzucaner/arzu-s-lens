@@ -1,12 +1,23 @@
-function toggleMenu() {
-    var sidebar = document.getElementById("sidebar");
-    var main = document.getElementById("main");
-    if (sidebar.style.width === "250px") {
-        sidebar.style.width = "0";
-        main.style.marginLeft = "0";
-    } else {
-        sidebar.style.width = "250px";
-        main.style.marginLeft = "250px";
-    }
-}
+document.getElementById('menu-btn').addEventListener('click', function () {
+    document.getElementById('sidebar').style.width = '250px';
+});
 
+document.getElementById('close-btn').addEventListener('click', function () {
+    document.getElementById('sidebar').style.width = '0';
+});
+
+document.querySelectorAll('#sidebar ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetSection.offsetTop - 50, // Adjust for fixed header
+            behavior: 'smooth'
+        });
+
+        document.getElementById('sidebar').style.width = '0'; // Close sidebar after click
+    });
+});
