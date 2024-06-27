@@ -14,10 +14,10 @@ document.querySelectorAll('#sidebar ul li a').forEach(anchor => {
         const targetSection = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetSection.offsetTop - 50, // Adjust for fixed header
+            top: targetSection.offsetTop - 50, 
             behavior: 'smooth'
         });
 
-        document.getElementById('sidebar').style.width = '0'; // Close sidebar after click
+        document.getElementById('sidebar').style.width = '0'; 
     });
 });

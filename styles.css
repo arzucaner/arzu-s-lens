@@ -81,7 +81,7 @@ header h1 {
 
 .container {
     width: 80%;
-    margin: 80px auto; /* Adjusted for fixed header */
+    margin: 80px auto; 
     overflow: hidden;
 }
 
