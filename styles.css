@@ -140,3 +140,19 @@ ul li a:hover {
     object-fit: cover;
     border-radius: 50%;
 }
+.story-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.story {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.story h3 {
+    margin-top: 0;
+}
