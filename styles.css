@@ -140,6 +140,7 @@ ul li a:hover {
     object-fit: cover;
     border-radius: 50%;
 }
+
 .story-container {
     display: flex;
     flex-direction: column;
@@ -155,4 +156,18 @@ ul li a:hover {
 
 .story h3 {
     margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 100px auto;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    #sidebar ul li a {
+        font-size: 18px;
+    }
 }
