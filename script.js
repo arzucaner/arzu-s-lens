@@ -1,11 +1,3 @@
-document.getElementById('menu-btn').addEventListener('click', function () {
-    document.getElementById('sidebar').style.width = '250px';
-});
-
-document.getElementById('close-btn').addEventListener('click', function () {
-    document.getElementById('sidebar').style.width = '0';
-});
-
 document.querySelectorAll('#sidebar ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -14,10 +6,8 @@ document.querySelectorAll('#sidebar ul li a').forEach(anchor => {
         const targetSection = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetSection.offsetTop - 50,
+            top: targetSection.offsetTop,
             behavior: 'smooth'
         });
-
-        document.getElementById('sidebar').style.width = '0';
     });
 });
