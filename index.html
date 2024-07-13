@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div id="sidebar">
+        <div class="photo">
+            <img src="photo.jpg" alt="Arzu's Photograph">
+        </div>
         <h1>Arzu Caner</h1>
-    </header>
-    
-    <nav id="sidebar">
-        <ul>
+        <p>Software Developer</p>
+        <hr class="divider"> 
+        <ul class="menu">
             <li><a href="#about-me">Who I am?</a></li>
             <li><a href="#speaking">Speaking</a></li>
             <li><a href="#achievements">Achievements</a></li>
@@ -22,15 +24,25 @@
             <li><a href="#story">Story</a></li>
             <li><a href="#blog">Blog</a></li>
         </ul>
-    </nav>
+        <hr class="divider"> 
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/arzucaner/" target="_blank">LinkedIn</a></li>
+            <li><a href="[Medium URL]" target="_blank">Medium</a></li>
+            <li><a href="https://x.com/arz_ugny" target="_blank">X</a></li>
+            <li><a href="https://github.com/arzucaner" target="_blank">GitHub</a></li>
+            <li><a href="https://www.youtube.com/channel/UCsK0v6RouRYb5I1Ny8flrOg" target="_blank">YouTube</a></li>
+        </ul>
+    </div>
 
     <div class="container">
-        <section id="about-me">
+        <header>
+            <h1>Hi, I'm Mary</h1>
+        </header>
+        <section id="about-me" class="section-content">
             <h2>Who I am?</h2>
             <p>Arzu began her career in the telecommunications sector, specializing in CRM systems and marketing...</p>
         </section>
-        
-        <section id="social-media">
+        <section id="social-media" class="section-content">
             <h2>Find Me On</h2>
             <ul>
                 <li><a href="https://www.linkedin.com/in/arzucaner/" target="_blank">LinkedIn</a><p>Connect with me professionally and see my career achievements.</p></li>
@@ -40,8 +52,7 @@
                 <li><a href="https://www.youtube.com/channel/UCsK0v6RouRYb5I1Ny8flrOg" target="_blank">YouTube</a><p>Watch my tutorials and project showcases.</p></li>
             </ul>
         </section>
-        
-        <section id="Projects">
+        <section id="Projects" class="section-content">
             <h2>My Projects</h2>
             <ul>
                 <li>When Women Understand...
@@ -52,49 +63,42 @@
                 </li>
             </ul>
         </section>
-        
-        <section id="Speakings">
+        <section id="Speakings" class="section-content">
             <h2>Speaking</h2>
             <ul>
                 <li>International LT Session hosted by GDSC TMU and WTM on International Women's Day!</li>
             </ul>
         </section>
-        
-        <section id="achievements">
+        <section id="achievements" class="section-content">
             <h2>Achievements</h2>
             <ul>
                 <li>Days Of Code Challenge Badge 2023</li>
             </ul>
         </section>
-        
-        <section id="Life">
+        <section id="Life" class="section-content">
             <h2>Life</h2>
             <ul>
                 <li>You can find me writing song lyrics and playing guitar when I'm not coding.</li>
             </ul>
         </section>
-        
-        <section id="Product">
+        <section id="Product" class="section-content">
             <h2>Product</h2>
             <ul>
                 <li>Knitting App</li>
             </ul>
         </section>
-        
-        <section id="photograph">
+        <section id="photograph" class="section-content">
             <h2>My Photograph</h2>
             <div class="photo-container">
                 <img src="photo.jpg" alt="Arzu's Photograph">
             </div>
             <p>Here's a glimpse of me in my natural habitat.</p>
         </section>
-        
-        <section id="Volunteer">
+        <section id="Volunteer" class="section-content">
             <h2>Volunteer</h2>
             <p>Women Coding Community</p>
         </section>
-        
-        <section id="story">
+        <section id="story" class="section-content">
             <h2>My Story</h2>
             <div class="story-container">
                 <div class="story">
@@ -111,16 +115,12 @@
                 </div>
             </div>
         </section>
-        
-        <section id="Blog">
+        <section id="Blog" class="section-content">
             <h2>Blog</h2>
             <ul>
                 <li>My blog post</li>
             </ul>
         </section>
-        
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
