@@ -6,7 +6,7 @@ document.querySelectorAll('#sidebar ul li a').forEach(anchor => {
         const targetSection = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetSection.offsetTop,
+            top: targetSection.offsetTop - 20, 
             behavior: 'smooth'
         });
     });
