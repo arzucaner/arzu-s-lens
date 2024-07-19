@@ -91,3 +91,16 @@ section h2 {
     background: #5a4633; 
     margin: 20px 0;
 }
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .container {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
