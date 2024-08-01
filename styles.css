@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: #f8f5f2; 
+    background-color: #f8f5f2;
 }
 
 #sidebar {
     width: 250px;
-    background-color: #e4d5c7; 
+    background-color: #e4d5c7;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     height: 100vh;
@@ -32,14 +32,7 @@ body {
     display: block;
 }
 
-h1 {
-    font-size: 18px;
-    margin: 0;
-    margin-bottom: 10px;
-    color: #5a4633; 
-}
-
-p {
+h1, p, .menu li a, .social-media li a {
     color: #5a4633;
 }
 
@@ -54,7 +47,6 @@ p {
 
 .menu li a, .social-media li a {
     text-decoration: none;
-    color: #5a4633;
     transition: color 0.3s ease-in-out;
 }
 
@@ -65,38 +57,26 @@ p {
 
 .container {
     margin-left: 280px;
-    padding: 40px; 
+    padding: 40px;
     flex-grow: 1;
-    background-color: #ffffff; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
 }
 
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    margin-top: 0; 
-    color: #5a4633; 
-}
-
 .section-content {
-    margin-top: 20px; 
-    line-height: 1.6; 
-    color: #5a4633;
+    margin-bottom: 40px;
+    line-height: 1.6;
     transition: opacity 0.5s ease-in-out;
-}
-.section-content.visible {
-    opacity: 1;
 }
 
 .divider {
     border: 0;
     height: 1px;
-    background: #5a4633; 
+    background: #5a4633;
     margin: 20px 0;
 }
+
 @media (max-width: 768px) {
     #sidebar {
         width: 100%;
@@ -110,3 +90,47 @@ section h2 {
     }
 }
 
+/* Dark mode styling */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode #sidebar {
+    background-color: #333333;
+}
+
+.dark-mode a {
+    color: #ffffff;
+}
+
+.dark-mode .menu li a:hover, .dark-mode .social-media li a:hover {
+    color: #c7956d;
+}
+
+.dark-mode .divider {
+    background: #ffffff;
+}
+
+/* Toggle button styling */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.toggle-container span {
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dark-mode .toggle-container span:first-child {
+    opacity: 0.3;
+}
+
+.dark-mode .toggle-container span:last-child {
+    opacity: 1;
+}

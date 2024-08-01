@@ -11,3 +11,8 @@ document.querySelectorAll('#sidebar ul li a').forEach(anchor => {
         });
     });
 });
+
+// Dark mode toggle
+document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+});
