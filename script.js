@@ -20,3 +20,20 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function (
 document.getElementById('close-banner').addEventListener('click', function () {
     document.getElementById('notification-banner').style.display = 'none';
 });
+
+const scrollToTopBtn = document.getElementById('scroll-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
