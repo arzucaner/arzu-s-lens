@@ -179,3 +179,16 @@ h1, p, .menu li a, .social-media li a {
 #scroll-to-top.visible {
     display: block;
 }
+.parallax {
+    background-image: url('parallax-background.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
