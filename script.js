@@ -37,3 +37,13 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+const themeSwitch = document.getElementById('theme-switch');
+themeSwitch.addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+    if (document.body.classList.contains('dark-theme')) {
+        themeSwitch.textContent = 'Switch to Light Mode';
+    } else {
+        themeSwitch.textContent = 'Switch to Dark Mode';
+    }
+});

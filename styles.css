@@ -192,3 +192,32 @@ h1, p, .menu li a, .social-media li a {
     color: white;
     text-align: center;
 }
+body.dark-theme {
+    background-color: #2c2c2c;
+    color: #f8f5f2;
+}
+
+body.dark-theme #sidebar {
+    background-color: #333;
+}
+
+body.dark-theme .container {
+    background-color: #444;
+}
+
+body.dark-theme a {
+    color: #f8f5f2;
+}
+
+body.dark-theme a:hover {
+    color: #c7956d;
+}
+
+body.dark-theme .stat {
+    background-color: #555;
+}
+
+body.dark-theme .testimonial,
+body.dark-theme .blog-post {
+    background-color: #555;
+}
