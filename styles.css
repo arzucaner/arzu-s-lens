@@ -221,3 +221,29 @@ body.dark-theme .testimonial,
 body.dark-theme .blog-post {
     background-color: #555;
 }
+
+.project {
+    background-color: #e4d5c7;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #5a4633;
+}
+
+.project p {
+    color: #5a4633;
+}
+
+.project a {
+    text-decoration: none;
+    color: #c7956d;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #5a4633;
+}
