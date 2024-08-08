@@ -47,3 +47,19 @@ themeSwitch.addEventListener('click', function() {
         themeSwitch.textContent = 'Switch to Dark Mode';
     }
 });
+
+const sections = document.querySelectorAll('.section-content');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+sections.forEach(section => {
+    observer.observe(section);
+});
