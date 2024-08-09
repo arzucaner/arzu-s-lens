@@ -63,3 +63,17 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
     observer.observe(section);
 });
+document.querySelectorAll('.ripple-button').forEach(button => {
+    button.addEventListener('click', function(e) {
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        this.appendChild(ripple);
+        
+        const maxDimension = Math.max(this.clientWidth, this.clientHeight);
+        ripple.style.width = ripple.style.height = `${maxDimension}px`;
+        ripple.style.left = `${e.clientX - this.offsetLeft - maxDimension / 2}px`;
+        ripple.style.top = `${e.clientY - this.offsetTop - maxDimension / 2}px`;
+        
+        setTimeout(() => ripple.remove(), 600);
+    });
+});
