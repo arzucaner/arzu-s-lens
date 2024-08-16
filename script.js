@@ -19,7 +19,12 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function (
 
 document.getElementById('close-banner').addEventListener('click', function () {
     document.getElementById('notification-banner').style.display = 'none';
-});
+  
+     document.body.classList.add('transition');
+     setTimeout(function() {
+         document.body.classList.remove('transition');
+     }, 500); 
+ });
 
 const scrollToTopBtn = document.getElementById('scroll-to-top');
 
