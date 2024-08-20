@@ -10,14 +10,14 @@ body {
     width: 250px;
     background-color: #e4d5c7;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-    z-index: 1;
-    transition: background-color 0.5s ease;}
+    transition: background-color 0.5s ease;
+}
 
 .photo {
     width: 100px;
@@ -48,7 +48,7 @@ h1, p, .menu li a, .social-media li a {
 
 .menu li a, .social-media li a {
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .menu li a:hover, .social-media li a:hover {
@@ -61,14 +61,21 @@ h1, p, .menu li a, .social-media li a {
     padding: 40px;
     flex-grow: 1;
     background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
 .section-content {
     margin-bottom: 40px;
     line-height: 1.6;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-content.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .divider {
@@ -134,16 +141,6 @@ h1, p, .menu li a, .social-media li a {
     opacity: 1;
 }
 
-.section-content {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    transform: translateY(20px);
-}
-
-.section-content.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 #notification-banner {
     background-color: #c7956d;
     color: white;
@@ -180,6 +177,7 @@ h1, p, .menu li a, .social-media li a {
 #scroll-to-top.visible {
     display: block;
 }
+
 .parallax {
     background-image: url('parallax-background.jpg');
     height: 500px;
@@ -193,6 +191,7 @@ h1, p, .menu li a, .social-media li a {
     color: white;
     text-align: center;
 }
+
 body.dark-theme {
     background-color: #2c2c2c;
     color: #f8f5f2;
@@ -249,16 +248,6 @@ body.dark-theme .blog-post {
     color: #5a4633;
 }
 
-.section-content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.section-content.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 .ripple-button {
     position: relative;
     overflow: hidden;
@@ -275,6 +264,7 @@ body.dark-theme .blog-post {
     transform: scale(0);
     animation: ripple 0.6s linear;
     pointer-events: none;
+    transform-origin: center;
 }
 
 @keyframes ripple {
