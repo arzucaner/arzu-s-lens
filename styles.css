@@ -193,3 +193,10 @@ h1, h2, h3, p {
 .dark-mode .toggle-container span:last-child {
     opacity: 1;
 }
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+.fade-in.visible {
+    opacity: 1;
+}
