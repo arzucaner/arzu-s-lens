@@ -36,8 +36,27 @@ body {
     height: auto;
     display: block;
 }
+.name {
+    color: #f8f5f2; 
+    text-align: center;
+    font-weight: bold;
+}
 
-h1, p, .menu li a, .social-media li a {
+.dark-mode .name {
+    color: #e0e0e0; 
+}
+.title {
+    color: #f8f5f2; 
+    text-align: center;
+    font-style: italic;
+    margin-top: -10px; 
+}
+
+.dark-mode .title {
+    color: #e0e0e0; 
+}
+
+.menu li a, .social-media li a {
     color: #ffffff; 
 }
 
